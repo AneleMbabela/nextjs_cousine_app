@@ -1,16 +1,22 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.client.debug {
+  -webkit-box-shadow: inset 0px 0px 0px 5px #000000;
+  box-shadow: inset 0px 0px 0px 5px #000000;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.server.debug {
+  -webkit-box-shadow: inset 0px 0px 0px 5px #9f00c5;
+  box-shadow: inset 0px 0px 0px 5px #9f00c5;
 }
 
-* {
-  box-sizing: border-box;
+.server.card.debug {
+  padding: 5px;
+}
+
+.homepage {
+  background-image: url("/bg.png");
+  background-size: cover;
 }
